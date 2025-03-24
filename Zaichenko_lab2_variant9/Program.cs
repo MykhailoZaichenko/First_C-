@@ -199,7 +199,8 @@ public class Program
         // 4.За допомогою методу AddBooks (params Book[] ) додати елементи до списку книг другого об’єкту і вивести його дані з використанням методу ToString().
         Book book1 = new Book(new Person("Author1FirstName", "Author1LastName", new DateTime(1980, 1, 1)), "Book1Title", new DateTime(2020, 1, 1), Size.Standard);
         Book book2 = new Book(new Person("Author2FirstName", "Author2LastName", new DateTime(1990, 2, 2)), "Book2Title", new DateTime(2021, 2, 2), Size.Big);
-        publisher2.AddBooks(book1, book2);
+        Book book3 = new Book(new Person("Author3FirstName", "Author3LastName", new DateTime(1990, 2, 2)), "Book2Title", new DateTime(2022, 3, 2), Size.Pocket);
+        publisher2.AddBooks(book1, book2, book3);
         Console.WriteLine(publisher2.ToString());
 
         // 5.Вивести значення властивості, яка повертає посилання на останню видану книгу.
